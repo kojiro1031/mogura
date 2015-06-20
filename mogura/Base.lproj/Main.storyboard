@@ -1,13 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="W37-cA-vjr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Top View Controller-->
+        <scene sceneID="bbt-fO-nVC">
+            <objects>
+                <viewController id="W37-cA-vjr" customClass="TopViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4ZB-RX-Xq8"/>
+                        <viewControllerLayoutGuide type="bottom" id="7TQ-MN-H1v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZtN-sY-I0N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abu-df-uja">
+                                <rect key="frame" x="100" y="258" width="121" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="40"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" animates="NO" id="bbh-Rc-308"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUN-E7-Cd6">
+                                <rect key="frame" x="20" y="20" width="23" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="config">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0cT-yR-Ffp" kind="modal" animates="NO" id="x4J-ra-bKM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="abu-df-uja" secondAttribute="centerX" id="04i-Na-dTv"/>
+                            <constraint firstAttribute="centerY" secondItem="abu-df-uja" secondAttribute="centerY" id="lGw-I1-3kb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mp4-hK-zkk"/>
+                    <connections>
+                        <outlet property="startButton" destination="abu-df-uja" id="Y5R-y2-ib7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DUd-dI-b0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-306" y="82"/>
+        </scene>
+        <!--Game View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="GameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,16 +64,298 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohx-LJ-aLh">
+                                <rect key="frame" x="20" y="40" width="63" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNt-mA-fvf">
+                                <rect key="frame" x="221" y="40" width="79" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="26"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5hn-bf-eoJ">
+                                <rect key="frame" x="10" y="134" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.26114608713206749" green="0.47614452526450757" blue="0.50705516581632648" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Arg-PU-xe0"/>
+                                    <constraint firstAttribute="width" constant="300" id="hOT-hy-QWB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckP-cO-BrE">
+                                <rect key="frame" x="124" y="40" width="73" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7f-b0-hRL">
+                                <rect key="frame" x="20" y="106" width="67" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="22"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combo!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VR8-8f-A3j">
+                                <rect key="frame" x="20" y="90" width="68" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+5sec" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etT-4m-b3J">
+                                <rect key="frame" x="88" y="47" width="52" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3aw-iR-fyt">
+                                <rect key="frame" x="85" y="474" width="150" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="fhV-EK-LvO"/>
+                                    <constraint firstAttribute="height" constant="15" id="hfR-2y-m6L"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="etT-4m-b3J" firstAttribute="leading" secondItem="ohx-LJ-aLh" secondAttribute="trailing" constant="5" id="2fQ-Zd-lEl"/>
+                            <constraint firstItem="ohx-LJ-aLh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="2o6-e5-1mF"/>
+                            <constraint firstItem="ckP-cO-BrE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="5wC-0g-LwJ"/>
+                            <constraint firstItem="5hn-bf-eoJ" firstAttribute="top" secondItem="n7f-b0-hRL" secondAttribute="bottom" constant="6" id="8ws-jm-L4q"/>
+                            <constraint firstItem="SNt-mA-fvf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="9cW-Um-04P"/>
+                            <constraint firstAttribute="centerY" secondItem="5hn-bf-eoJ" secondAttribute="centerY" id="ETF-z5-igp"/>
+                            <constraint firstAttribute="centerX" secondItem="5hn-bf-eoJ" secondAttribute="centerX" id="FE8-Ct-w6t"/>
+                            <constraint firstItem="n7f-b0-hRL" firstAttribute="leading" secondItem="VR8-8f-A3j" secondAttribute="leading" id="Lo5-98-jFE"/>
+                            <constraint firstItem="3aw-iR-fyt" firstAttribute="top" secondItem="5hn-bf-eoJ" secondAttribute="bottom" constant="40" id="QXY-Ji-QL1"/>
+                            <constraint firstItem="n7f-b0-hRL" firstAttribute="top" secondItem="VR8-8f-A3j" secondAttribute="bottom" id="bj5-tE-csh"/>
+                            <constraint firstAttribute="trailing" secondItem="SNt-mA-fvf" secondAttribute="trailing" constant="20" id="iex-Oe-tpr"/>
+                            <constraint firstItem="ohx-LJ-aLh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="rHJ-Ls-wSi"/>
+                            <constraint firstAttribute="centerX" secondItem="3aw-iR-fyt" secondAttribute="centerX" id="saR-kF-Rwm"/>
+                            <constraint firstItem="VR8-8f-A3j" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="u8L-A6-ZMy"/>
+                            <constraint firstItem="ohx-LJ-aLh" firstAttribute="baseline" secondItem="etT-4m-b3J" secondAttribute="baseline" id="um7-WT-94S"/>
+                            <constraint firstAttribute="centerX" secondItem="ckP-cO-BrE" secondAttribute="centerX" id="zra-gD-9ef"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aMd-aC-Ec1"/>
+                    <connections>
+                        <outlet property="addSecLabel" destination="etT-4m-b3J" id="uGi-0g-88v"/>
+                        <outlet property="comboLabel" destination="n7f-b0-hRL" id="rd8-Re-kOa"/>
+                        <outlet property="comboTopLabel" destination="VR8-8f-A3j" id="0Cm-zu-tPc"/>
+                        <outlet property="feverProgressView" destination="3aw-iR-fyt" id="NOz-hR-ns1"/>
+                        <outlet property="pauseButton" destination="SNt-mA-fvf" id="8DF-mU-gaN"/>
+                        <outlet property="scoreLabel" destination="ckP-cO-BrE" id="5ki-Jj-Xd9"/>
+                        <outlet property="stage" destination="5hn-bf-eoJ" id="IhR-jc-umq"/>
+                        <outlet property="timeLabel" destination="ohx-LJ-aLh" id="ayE-of-qlK"/>
+                        <segue destination="sZ6-4y-FOK" kind="modal" identifier="END" animates="NO" id="GHP-ph-L5P"/>
+                        <segue destination="W37-cA-vjr" kind="modal" identifier="QUIT" animates="NO" id="eWh-Zw-04s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="178" y="717"/>
+        </scene>
+        <!--Config View Controller-->
+        <scene sceneID="f3R-v8-KOS">
+            <objects>
+                <viewController id="0cT-yR-Ffp" customClass="ConfigViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7YZ-VI-qSW"/>
+                        <viewControllerLayoutGuide type="bottom" id="kUX-YM-xhK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aOW-Pl-Scq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTN-Ec-WcO">
+                                <rect key="frame" x="112" y="466" width="97" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="40"/>
+                                <state key="normal" title="Exit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="W37-cA-vjr" kind="modal" animates="NO" id="YQ5-ZV-KEI"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ct6-iI-KfE">
+                                <rect key="frame" x="101" y="339" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="Zxm-M9-KRb"/>
+                                    <constraint firstAttribute="height" constant="30" id="dGp-qs-LcH"/>
+                                </constraints>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SE volume" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5S-4W-muf">
+                                <rect key="frame" x="114" y="304" width="92" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kKR-f6-bl2">
+                                <rect key="frame" x="101" y="239" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="O6Q-8f-02I"/>
+                                    <constraint firstAttribute="width" constant="114" id="YJk-ya-lxG"/>
+                                </constraints>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BGM volume" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUE-Nv-SmB">
+                                <rect key="frame" x="109" y="204" width="103" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ah7-qj-QJc">
+                                <rect key="frame" x="136" y="139" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Debug Mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W23-Tn-vGe">
+                                <rect key="frame" x="109" y="102" width="103" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="kKR-f6-bl2" secondAttribute="centerY" constant="30" id="1CO-pJ-Q9b"/>
+                            <constraint firstItem="ah7-qj-QJc" firstAttribute="top" secondItem="W23-Tn-vGe" secondAttribute="bottom" constant="20" id="1gQ-nu-Fth"/>
+                            <constraint firstItem="Ct6-iI-KfE" firstAttribute="top" secondItem="K5S-4W-muf" secondAttribute="bottom" constant="18" id="5oV-jk-Qqp"/>
+                            <constraint firstAttribute="centerX" secondItem="kKR-f6-bl2" secondAttribute="centerX" id="8gl-Z0-z9C"/>
+                            <constraint firstAttribute="centerX" secondItem="ZTN-Ec-WcO" secondAttribute="centerX" id="BN8-q1-sZv"/>
+                            <constraint firstAttribute="centerY" secondItem="Ct6-iI-KfE" secondAttribute="centerY" constant="-70" id="BzX-di-2mH"/>
+                            <constraint firstItem="K5S-4W-muf" firstAttribute="centerX" secondItem="Ct6-iI-KfE" secondAttribute="centerX" id="HBD-eb-Yky"/>
+                            <constraint firstAttribute="centerY" secondItem="ah7-qj-QJc" secondAttribute="centerY" constant="130" id="Max-72-MxF"/>
+                            <constraint firstAttribute="centerX" secondItem="WUE-Nv-SmB" secondAttribute="centerX" id="WE1-b0-HQS"/>
+                            <constraint firstAttribute="centerX" secondItem="W23-Tn-vGe" secondAttribute="centerX" id="WPV-2q-70d"/>
+                            <constraint firstAttribute="centerX" secondItem="ah7-qj-QJc" secondAttribute="centerX" id="jeB-tR-3oe"/>
+                            <constraint firstItem="K5S-4W-muf" firstAttribute="top" secondItem="kKR-f6-bl2" secondAttribute="bottom" constant="35" id="kL0-BW-FnH"/>
+                            <constraint firstItem="kKR-f6-bl2" firstAttribute="top" secondItem="WUE-Nv-SmB" secondAttribute="bottom" constant="18" id="mmd-6J-aO0"/>
+                            <constraint firstAttribute="centerX" secondItem="Ct6-iI-KfE" secondAttribute="centerX" id="soU-E4-Skr"/>
+                            <constraint firstItem="kUX-YM-xhK" firstAttribute="top" secondItem="ZTN-Ec-WcO" secondAttribute="bottom" constant="50" id="u4R-zE-uxM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HI8-9u-IiB"/>
+                    <connections>
+                        <outlet property="bgmVolumeSlider" destination="kKR-f6-bl2" id="RfW-SN-HeQ"/>
+                        <outlet property="debugSwitch" destination="ah7-qj-QJc" id="Xw2-nL-z4k"/>
+                        <outlet property="seVolumeSlider" destination="Ct6-iI-KfE" id="Baz-kp-69h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gz5-J7-kER" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="171" y="-329"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="86z-sk-pzm">
+            <objects>
+                <viewController id="sZ6-4y-FOK" customClass="ResultViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qO3-iA-G8g"/>
+                        <viewControllerLayoutGuide type="bottom" id="7MB-gS-E9B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kZx-ST-86y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMZ-gm-bEt">
+                                <rect key="frame" x="124" y="368" width="73" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="40"/>
+                                <state key="normal" title="End">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="W37-cA-vjr" kind="modal" animates="NO" id="2Ap-eZ-dPR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VED-Qz-yEJ">
+                                <rect key="frame" x="141" y="221" width="79" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="26"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MaxCombo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGb-cU-anh">
+                                <rect key="frame" x="132" y="274" width="97" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoT-pF-j2s">
+                                <rect key="frame" x="20" y="229" width="55" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbx-uM-h2U">
+                                <rect key="frame" x="20" y="278" width="49" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CountArray" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uT-gg-4Nr">
+                                <rect key="frame" x="120" y="324" width="121" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQa-qz-Z3b">
+                                <rect key="frame" x="20" y="328" width="49" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="mGb-cU-anh" secondAttribute="centerX" constant="-20" id="3YM-El-ihN"/>
+                            <constraint firstItem="FQa-qz-Z3b" firstAttribute="leading" secondItem="kZx-ST-86y" secondAttribute="leading" constant="20" id="GAk-EZ-wOL"/>
+                            <constraint firstAttribute="centerX" secondItem="VED-Qz-yEJ" secondAttribute="centerX" constant="-20" id="HZC-fB-niF"/>
+                            <constraint firstItem="qbx-uM-h2U" firstAttribute="leading" secondItem="kZx-ST-86y" secondAttribute="leading" constant="20" id="KfH-EK-rtR"/>
+                            <constraint firstItem="qbx-uM-h2U" firstAttribute="bottom" secondItem="mGb-cU-anh" secondAttribute="bottom" id="MrE-3V-ndk"/>
+                            <constraint firstAttribute="centerX" secondItem="4uT-gg-4Nr" secondAttribute="centerX" constant="-20" id="Oja-0q-H1i"/>
+                            <constraint firstAttribute="centerY" secondItem="mGb-cU-anh" secondAttribute="centerY" id="WQW-LZ-P7C"/>
+                            <constraint firstAttribute="centerX" secondItem="WMZ-gm-bEt" secondAttribute="centerX" id="WWW-mY-FlJ"/>
+                            <constraint firstAttribute="centerY" secondItem="WMZ-gm-bEt" secondAttribute="centerY" constant="-110" id="Ysg-2o-fMi"/>
+                            <constraint firstAttribute="centerY" secondItem="VED-Qz-yEJ" secondAttribute="centerY" constant="50" id="csD-i6-pqg"/>
+                            <constraint firstItem="uoT-pF-j2s" firstAttribute="bottom" secondItem="VED-Qz-yEJ" secondAttribute="bottom" id="iL7-bu-qPp"/>
+                            <constraint firstItem="4uT-gg-4Nr" firstAttribute="bottom" secondItem="FQa-qz-Z3b" secondAttribute="bottom" id="j4g-bi-5DK"/>
+                            <constraint firstAttribute="centerY" secondItem="4uT-gg-4Nr" secondAttribute="centerY" constant="-50" id="qNy-1z-lyx"/>
+                            <constraint firstItem="uoT-pF-j2s" firstAttribute="leading" secondItem="kZx-ST-86y" secondAttribute="leading" constant="20" id="yT5-jR-euH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zn0-UP-p0x"/>
+                    <connections>
+                        <outlet property="comboLabel" destination="mGb-cU-anh" id="hf7-V6-byu"/>
+                        <outlet property="countLabel" destination="4uT-gg-4Nr" id="LfL-9o-9Y5"/>
+                        <outlet property="scoreLabel" destination="VED-Qz-yEJ" id="FLC-dD-dbr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rms-11-Bd8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="67"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="config" width="150" height="150"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="YQ5-ZV-KEI"/>
+    </inferredMetricsTieBreakers>
 </document>

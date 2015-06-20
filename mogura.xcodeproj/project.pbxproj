@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8002646E1B10358300A09D4B /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8002646D1B10358300A09D4B /* Constants.m */; };
+		800264721B103E7E00A09D4B /* Mogura.m in Sources */ = {isa = PBXBuildFile; fileRef = 800264711B103E7E00A09D4B /* Mogura.m */; };
+		800264751B105DFD00A09D4B /* RareMogura.m in Sources */ = {isa = PBXBuildFile; fileRef = 800264741B105DFD00A09D4B /* RareMogura.m */; };
+		800264781B1060D600A09D4B /* MoguraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 800264771B1060D600A09D4B /* MoguraManager.m */; };
+		8002647A1B106DC700A09D4B /* hit2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 800264791B106DC700A09D4B /* hit2.aiff */; };
+		802D77DE1B2C1FF300BA5880 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802D77DD1B2C1FF300BA5880 /* GameKit.framework */; };
+		803C82091AFDF04F0082748E /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 803C82081AFDF04F0082748E /* ConfigViewController.m */; };
+		803C820C1AFE023B0082748E /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 803C820B1AFE023B0082748E /* bgm.mp3 */; };
+		804AA22F1B19A0F300CC63DB /* mokkin.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 804AA22E1B19A0F300CC63DB /* mokkin.aiff */; };
+		80886A831AFDCE9D008D6E7D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80886A821AFDCE9D008D6E7D /* AVFoundation.framework */; };
+		80886A871AFDDD5C008D6E7D /* hit.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 80886A861AFDDD5C008D6E7D /* hit.aiff */; };
+		80886A8D1AFDE41A008D6E7D /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80886A8C1AFDE41A008D6E7D /* SoundManager.m */; };
+		808C48B61ABD39C10003BD0F /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808C48B51ABD39C10003BD0F /* TopViewController.m */; };
+		808C48B91ABD3A0B0003BD0F /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808C48B81ABD3A0B0003BD0F /* ResultViewController.m */; };
 		80951DAC1AAACD5B00638F90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80951DAB1AAACD5B00638F90 /* Foundation.framework */; };
 		80951DAE1AAACD5B00638F90 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80951DAD1AAACD5B00638F90 /* CoreGraphics.framework */; };
 		80951DB01AAACD5B00638F90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80951DAF1AAACD5B00638F90 /* UIKit.framework */; };
@@ -14,13 +28,17 @@
 		80951DB81AAACD5B00638F90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80951DB71AAACD5B00638F90 /* main.m */; };
 		80951DBC1AAACD5B00638F90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80951DBB1AAACD5B00638F90 /* AppDelegate.m */; };
 		80951DBF1AAACD5B00638F90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80951DBD1AAACD5B00638F90 /* Main.storyboard */; };
-		80951DC21AAACD5B00638F90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80951DC11AAACD5B00638F90 /* ViewController.m */; };
+		80951DC21AAACD5B00638F90 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80951DC11AAACD5B00638F90 /* GameViewController.m */; };
 		80951DC41AAACD5B00638F90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80951DC31AAACD5B00638F90 /* Images.xcassets */; };
 		80951DCB1AAACD5B00638F90 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80951DCA1AAACD5B00638F90 /* XCTest.framework */; };
 		80951DCC1AAACD5B00638F90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80951DAB1AAACD5B00638F90 /* Foundation.framework */; };
 		80951DCD1AAACD5B00638F90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80951DAF1AAACD5B00638F90 /* UIKit.framework */; };
 		80951DD51AAACD5B00638F90 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80951DD31AAACD5B00638F90 /* InfoPlist.strings */; };
 		80951DD71AAACD5B00638F90 /* moguraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80951DD61AAACD5B00638F90 /* moguraTests.m */; };
+		80AC27E21B2D518D00883B46 /* fever.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80AC27E11B2D518D00883B46 /* fever.mp3 */; };
+		80AC27E41B2D6B1700883B46 /* cat.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 80AC27E31B2D6B1700883B46 /* cat.aiff */; };
+		80FAAED11ABD5B7100A578C9 /* PauseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80FAAED01ABD5B7100A578C9 /* PauseView.xib */; };
+		80FAAED41ABD5DEA00A578C9 /* PauseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FAAED31ABD5DEA00A578C9 /* PauseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +52,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8002646C1B10358300A09D4B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		8002646D1B10358300A09D4B /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		800264701B103E7E00A09D4B /* Mogura.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mogura.h; sourceTree = "<group>"; };
+		800264711B103E7E00A09D4B /* Mogura.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mogura.m; sourceTree = "<group>"; };
+		800264731B105DFD00A09D4B /* RareMogura.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RareMogura.h; sourceTree = "<group>"; };
+		800264741B105DFD00A09D4B /* RareMogura.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RareMogura.m; sourceTree = "<group>"; };
+		800264761B1060D600A09D4B /* MoguraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoguraManager.h; sourceTree = "<group>"; };
+		800264771B1060D600A09D4B /* MoguraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoguraManager.m; sourceTree = "<group>"; };
+		800264791B106DC700A09D4B /* hit2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = hit2.aiff; sourceTree = "<group>"; };
+		800491AD1AE23DC8002F8BB9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		802D77DD1B2C1FF300BA5880 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		803C82071AFDF04F0082748E /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		803C82081AFDF04F0082748E /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
+		803C820B1AFE023B0082748E /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
+		804AA22E1B19A0F300CC63DB /* mokkin.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = mokkin.aiff; sourceTree = "<group>"; };
+		804D5D911AE24D6F00A6EAFA /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		804D5D921AE24D6F00A6EAFA /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80886A821AFDCE9D008D6E7D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		80886A861AFDDD5C008D6E7D /* hit.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = hit.aiff; sourceTree = "<group>"; };
+		80886A8B1AFDE41A008D6E7D /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		80886A8C1AFDE41A008D6E7D /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+		808C48B41ABD39C10003BD0F /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
+		808C48B51ABD39C10003BD0F /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
+		808C48B71ABD3A0B0003BD0F /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		808C48B81ABD3A0B0003BD0F /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
 		80951DA81AAACD5B00638F90 /* mogura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mogura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80951DAB1AAACD5B00638F90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80951DAD1AAACD5B00638F90 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +88,19 @@
 		80951DBA1AAACD5B00638F90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		80951DBB1AAACD5B00638F90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		80951DBE1AAACD5B00638F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		80951DC01AAACD5B00638F90 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		80951DC11AAACD5B00638F90 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		80951DC01AAACD5B00638F90 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		80951DC11AAACD5B00638F90 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		80951DC31AAACD5B00638F90 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		80951DC91AAACD5B00638F90 /* moguraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moguraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80951DCA1AAACD5B00638F90 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		80951DD21AAACD5B00638F90 /* moguraTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "moguraTests-Info.plist"; sourceTree = "<group>"; };
 		80951DD41AAACD5B00638F90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80951DD61AAACD5B00638F90 /* moguraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = moguraTests.m; sourceTree = "<group>"; };
+		80AC27E11B2D518D00883B46 /* fever.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fever.mp3; sourceTree = "<group>"; };
+		80AC27E31B2D6B1700883B46 /* cat.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = cat.aiff; sourceTree = "<group>"; };
+		80FAAED01ABD5B7100A578C9 /* PauseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PauseView.xib; sourceTree = "<group>"; };
+		80FAAED21ABD5DEA00A578C9 /* PauseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseView.h; sourceTree = "<group>"; };
+		80FAAED31ABD5DEA00A578C9 /* PauseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				802D77DE1B2C1FF300BA5880 /* GameKit.framework in Frameworks */,
+				80886A831AFDCE9D008D6E7D /* AVFoundation.framework in Frameworks */,
 				80951DAE1AAACD5B00638F90 /* CoreGraphics.framework in Frameworks */,
 				80951DB01AAACD5B00638F90 /* UIKit.framework in Frameworks */,
 				80951DAC1AAACD5B00638F90 /* Foundation.framework in Frameworks */,
@@ -79,6 +129,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8002646F1B103DB400A09D4B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				80951DBD1AAACD5B00638F90 /* Main.storyboard */,
+				808C48B41ABD39C10003BD0F /* TopViewController.h */,
+				808C48B51ABD39C10003BD0F /* TopViewController.m */,
+				80951DC01AAACD5B00638F90 /* GameViewController.h */,
+				80951DC11AAACD5B00638F90 /* GameViewController.m */,
+				808C48B71ABD3A0B0003BD0F /* ResultViewController.h */,
+				808C48B81ABD3A0B0003BD0F /* ResultViewController.m */,
+				803C82071AFDF04F0082748E /* ConfigViewController.h */,
+				803C82081AFDF04F0082748E /* ConfigViewController.m */,
+				80FAAED01ABD5B7100A578C9 /* PauseView.xib */,
+				80FAAED21ABD5DEA00A578C9 /* PauseView.h */,
+				80FAAED31ABD5DEA00A578C9 /* PauseView.m */,
+				800264761B1060D600A09D4B /* MoguraManager.h */,
+				800264771B1060D600A09D4B /* MoguraManager.m */,
+				800264701B103E7E00A09D4B /* Mogura.h */,
+				800264711B103E7E00A09D4B /* Mogura.m */,
+				800264731B105DFD00A09D4B /* RareMogura.h */,
+				800264741B105DFD00A09D4B /* RareMogura.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		800491AF1AE23E10002F8BB9 /* se */ = {
+			isa = PBXGroup;
+			children = (
+				80AC27E31B2D6B1700883B46 /* cat.aiff */,
+				804AA22E1B19A0F300CC63DB /* mokkin.aiff */,
+				800264791B106DC700A09D4B /* hit2.aiff */,
+				80886A861AFDDD5C008D6E7D /* hit.aiff */,
+			);
+			name = se;
+			sourceTree = "<group>";
+		};
+		803C820A1AFE02070082748E /* bgm */ = {
+			isa = PBXGroup;
+			children = (
+				803C820B1AFE023B0082748E /* bgm.mp3 */,
+				80AC27E11B2D518D00883B46 /* fever.mp3 */,
+			);
+			name = bgm;
+			sourceTree = "<group>";
+		};
 		80951D9F1AAACD5B00638F90 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +196,9 @@
 		80951DAA1AAACD5B00638F90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				802D77DD1B2C1FF300BA5880 /* GameKit.framework */,
+				80886A821AFDCE9D008D6E7D /* AVFoundation.framework */,
+				800491AD1AE23DC8002F8BB9 /* AudioToolbox.framework */,
 				80951DAB1AAACD5B00638F90 /* Foundation.framework */,
 				80951DAD1AAACD5B00638F90 /* CoreGraphics.framework */,
 				80951DAF1AAACD5B00638F90 /* UIKit.framework */,
@@ -112,11 +210,15 @@
 		80951DB11AAACD5B00638F90 /* mogura */ = {
 			isa = PBXGroup;
 			children = (
+				8002646F1B103DB400A09D4B /* view */,
+				803C820A1AFE02070082748E /* bgm */,
+				800491AF1AE23E10002F8BB9 /* se */,
 				80951DBA1AAACD5B00638F90 /* AppDelegate.h */,
 				80951DBB1AAACD5B00638F90 /* AppDelegate.m */,
-				80951DBD1AAACD5B00638F90 /* Main.storyboard */,
-				80951DC01AAACD5B00638F90 /* ViewController.h */,
-				80951DC11AAACD5B00638F90 /* ViewController.m */,
+				80886A8B1AFDE41A008D6E7D /* SoundManager.h */,
+				80886A8C1AFDE41A008D6E7D /* SoundManager.m */,
+				8002646C1B10358300A09D4B /* Constants.h */,
+				8002646D1B10358300A09D4B /* Constants.m */,
 				80951DC31AAACD5B00638F90 /* Images.xcassets */,
 				80951DB21AAACD5B00638F90 /* Supporting Files */,
 			);
@@ -199,6 +301,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
+					80951DA71AAACD5B00638F90 = {
+						DevelopmentTeam = 5K85DXASPC;
+					};
 					80951DC81AAACD5B00638F90 = {
 						TestTargetID = 80951DA71AAACD5B00638F90;
 					};
@@ -211,6 +316,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 80951D9F1AAACD5B00638F90;
 			productRefGroup = 80951DA91AAACD5B00638F90 /* Products */;
@@ -228,9 +334,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				804AA22F1B19A0F300CC63DB /* mokkin.aiff in Resources */,
+				8002647A1B106DC700A09D4B /* hit2.aiff in Resources */,
+				80AC27E41B2D6B1700883B46 /* cat.aiff in Resources */,
 				80951DC41AAACD5B00638F90 /* Images.xcassets in Resources */,
+				80AC27E21B2D518D00883B46 /* fever.mp3 in Resources */,
 				80951DB61AAACD5B00638F90 /* InfoPlist.strings in Resources */,
 				80951DBF1AAACD5B00638F90 /* Main.storyboard in Resources */,
+				803C820C1AFE023B0082748E /* bgm.mp3 in Resources */,
+				80FAAED11ABD5B7100A578C9 /* PauseView.xib in Resources */,
+				80886A871AFDDD5C008D6E7D /* hit.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +362,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80951DC21AAACD5B00638F90 /* ViewController.m in Sources */,
+				808C48B61ABD39C10003BD0F /* TopViewController.m in Sources */,
+				80951DC21AAACD5B00638F90 /* GameViewController.m in Sources */,
 				80951DBC1AAACD5B00638F90 /* AppDelegate.m in Sources */,
 				80951DB81AAACD5B00638F90 /* main.m in Sources */,
+				800264751B105DFD00A09D4B /* RareMogura.m in Sources */,
+				80886A8D1AFDE41A008D6E7D /* SoundManager.m in Sources */,
+				808C48B91ABD3A0B0003BD0F /* ResultViewController.m in Sources */,
+				800264721B103E7E00A09D4B /* Mogura.m in Sources */,
+				800264781B1060D600A09D4B /* MoguraManager.m in Sources */,
+				803C82091AFDF04F0082748E /* ConfigViewController.m in Sources */,
+				80FAAED41ABD5DEA00A578C9 /* PauseView.m in Sources */,
+				8002646E1B10358300A09D4B /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +400,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				80951DB51AAACD5B00638F90 /* en */,
+				804D5D911AE24D6F00A6EAFA /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -294,6 +417,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				80951DD41AAACD5B00638F90 /* en */,
+				804D5D921AE24D6F00A6EAFA /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -317,7 +441,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: SEIJI SHISHIDO (94332635N7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iOS Development: SEIJI SHISHIDO (94332635N7)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -355,7 +480,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: SEIJI SHISHIDO (94332635N7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iOS Development: SEIJI SHISHIDO (94332635N7)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -376,10 +502,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: SEIJI SHISHIDO (94332635N7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: SEIJI SHISHIDO (94332635N7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mogura/mogura-Prefix.pch";
 				INFOPLIST_FILE = "mogura/mogura-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4b8ce626-3480-470f-8d99-b205e90c75e5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,10 +518,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: SEIJI SHISHIDO (94332635N7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: SEIJI SHISHIDO (94332635N7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mogura/mogura-Prefix.pch";
 				INFOPLIST_FILE = "mogura/mogura-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4b8ce626-3480-470f-8d99-b205e90c75e5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -456,6 +588,7 @@
 				80951DDC1AAACD5B00638F90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80951DDD1AAACD5B00638F90 /* Build configuration list for PBXNativeTarget "moguraTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +597,7 @@
 				80951DDF1AAACD5B00638F90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

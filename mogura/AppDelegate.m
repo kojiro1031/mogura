@@ -7,12 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "SoundManager.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //サウンド初期化
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:nil];
+//    NSURL *urlSE01 = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"hit" ofType:@"aiff"]];
+//    [[SoundManager sharedManager] addSoundEffect:1 url:urlSE01];
     return YES;
 }
 							
