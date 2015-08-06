@@ -67,8 +67,8 @@
     self.isDebug = [[NSUserDefaults standardUserDefaults] boolForKey:DEBUG_MODE];
     [[MoguraManager sharedManager] initMoguraCount];
     [self.pauseButton addTarget:self
-                        action:@selector(tapPause:)
-              forControlEvents:UIControlEventTouchUpInside];
+                         action:@selector(tapPause:)
+               forControlEvents:UIControlEventTouchUpInside];
     UINib *nib = [UINib nibWithNibName:@"PauseView" bundle:nil];
     self.pauseView = [nib instantiateWithOwner:self options:nil][0];
     [self.pauseView.playButton addTarget:self
@@ -141,7 +141,7 @@
         moguraView.frame = frame;
         [moguraView addTarget:self
                        action:@selector(tapMogura:)
-//             forControlEvents:UIControlEventTouchUpInside];
+         //             forControlEvents:UIControlEventTouchUpInside];
              forControlEvents:UIControlEventTouchDown];
         [self.stage addSubview:moguraView];
     }
@@ -180,15 +180,10 @@
             comboBonus = 20;
             comboRate = 5;
         }
-//        comboBonus = self.combo < MAX_COMBO_BONUS? self.combo: MAX_COMBO_BONUS;
+        //        comboBonus = self.combo < MAX_COMBO_BONUS? self.combo: MAX_COMBO_BONUS;
         [self animationComboLabelAndText:comboRate];
     }
     self.comboTime = 0;
-    self.comboTimer = [NSTimer scheduledTimerWithTimeInterval:COMBO_TIMER_PERIOD
-                                                       target:self
-                                                     selector:@selector(onComboTimer:)
-                                                     userInfo:nil
-                                                      repeats:YES];
     self.tempScore = self.score;
     int addValue = sender.point * ceil(sender.time / sender.disSec * 10) * comboBonus;
     if (self.isFever) {
@@ -199,7 +194,7 @@
     }
     self.score += addValue;
     [self countUpScore];
-    // フィーバー
+    // フィーバー判定
     if (!self.isFever) {
         self.feverCount++;
         self.feverProgressView.progress = self.feverCount / FEVER_COUNT;
@@ -219,6 +214,12 @@
             [[SoundManager sharedManager] stopBgm];
             [[SoundManager sharedManager] playBgm:@"fever.mp3"];
             self.addSecLabel.hidden = NO;
+        } else {
+            self.comboTimer = [NSTimer scheduledTimerWithTimeInterval:COMBO_TIMER_PERIOD
+                                                               target:self
+                                                             selector:@selector(onComboTimer:)
+                                                             userInfo:nil
+                                                              repeats:YES];
         }
     }
 }
@@ -345,17 +346,16 @@
     for (Mogura *mogura in moguras) {
         [mogura play];
     }
-    if (self.comboTime > 0) {
-        self.comboTimer = [NSTimer scheduledTimerWithTimeInterval:COMBO_TIMER_PERIOD
-                                                           target:self
-                                                         selector:@selector(onComboTimer:)
-                                                         userInfo:nil
-                                                          repeats:YES];
-    }
     if (self.isFever) {
         self.feverTimer = [NSTimer scheduledTimerWithTimeInterval:FEVER_TIMER_PERIOD
                                                            target:self
                                                          selector:@selector(onFeverTimer:)
+                                                         userInfo:nil
+                                                          repeats:YES];
+    } else {
+        self.comboTimer = [NSTimer scheduledTimerWithTimeInterval:COMBO_TIMER_PERIOD
+                                                           target:self
+                                                         selector:@selector(onComboTimer:)
                                                          userInfo:nil
                                                           repeats:YES];
     }
@@ -368,7 +368,7 @@
 - (void)tapQuit:(id)sender
 {
     [self.timer invalidate];
-    [self performSegueWithIdentifier:@"QUIT" sender:self];    
+    [self performSegueWithIdentifier:@"QUIT" sender:self];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
